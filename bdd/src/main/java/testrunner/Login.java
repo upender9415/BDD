@@ -6,8 +6,9 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-  features = "C:\\Users\\upend\\Downloads\\Upender Reddy Personal\\WorkSpace\\bdd\\FeatureFiles"//folder name
+  features = "FeatureFiles"//folder name
   ,glue={"StepDefinitions"} //package name for step def
+  ,plugin = {"pretty", "html:target/cucumber-Report.html", "json:target/report.json"} 
   )
 
 
